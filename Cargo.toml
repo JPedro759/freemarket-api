@@ -19,3 +19,4 @@ password-hash = "0.5.0"
 rand_core = { version = "0.6.4", features = ["std"] }
 brazilian_utils = "0.1.0"
 brasilapi = "0.8.0"
+phonenumber = "0.3.9+9.0.21"

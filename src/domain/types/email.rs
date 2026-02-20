@@ -29,11 +29,12 @@ impl TryFrom<String> for Email {
     type Error = EmailError;
 
     fn try_from(value: String) -> Result<Self, Self::Error> {
-        if Self::validate(&value) {
-            Ok(Self(value))
-        } else {
-            Err(EmailError::InvalidFormat)
+        if !Self::validate(&value) {
+            return Err(EmailError::InvalidFormat)
+
         }
+
+        Ok(Self(value))
     }
 }
 

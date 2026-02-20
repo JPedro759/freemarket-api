@@ -1,3 +1,3 @@
 pub mod models;
-mod types;
-mod utils;
+pub mod types;
+pub mod utils;
